@@ -1,0 +1,34 @@
+html {
+	overflow: hidden;
+  }
+  
+  .Opponent {
+	-webkit-animation: rotation 3s infinite linear; /* Prefijo primero */
+	animation: rotation 3s infinite linear;
+  }
+  
+  .paused .Opponent {
+	-webkit-animation: none; /* Prefijo primero */
+	animation: none;
+  }
+  
+  @keyframes rotation {
+	from {
+	  -webkit-transform: rotate(0deg); /* Prefijo primero */
+	  transform: rotate(0deg);
+	}
+	to {
+	  -webkit-transform: rotate(359deg); /* Prefijo primero */
+	  transform: rotate(359deg);
+	}
+  }
+  
+  .gamebutton {
+	border: none;
+	background: #ddd;
+	color: #333;
+	padding: 10px 20px;
+	outline: none;
+	font-family: monospace;
+	cursor: pointer;
+  }
